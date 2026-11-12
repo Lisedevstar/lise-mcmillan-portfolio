@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A mobile companion for teachers — Lise McMillan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css?v=1792340257593"></head>
+<body class="case-study">
+
+<header class="site-nav">
+  <nav>
+    <a href="index.html#home" class="nav-link">Home</a>
+    <a href="index.html#how-i-work" class="nav-link">How I Work</a>
+    <a href="index.html#about" class="nav-link">About</a>
+  </nav>
+</header>
+
+<main class="cs-shell">
+  <nav class="cs-toc" aria-label="Case study sections">
+    <a href="#overview" class="cs-toc-link">Overview</a>
+    <a href="#problem" class="cs-toc-link">Problem &amp; hypothesis</a>
+    <a href="#outcome" class="cs-toc-link">The outcome</a>
+    <a href="#working" class="cs-toc-link">Experience leadership</a>
+    <a href="#decisions" class="cs-toc-link">Strategic decisions</a>
+    <a href="#realities" class="cs-toc-link">Key insights</a>
+    <a href="#reflections" class="cs-toc-link">Reflections</a>
+  </nav>
+
+  <article class="cs-content">
+
+    <section class="cs-hero" id="overview">
+      <p class="cs-eyebrow">Case study</p>
+      <h1 class="cs-title">Streamlining attendance and family communication for teachers</h1>
+      <p class="cs-subtitle">Enhancing the mobile educator app with dead-simple workflows for teachers&rsquo; key tasks — designed to meet them where they are.</p>
+
+      <div class="cs-details-card">
+        <div class="cs-detail">
+          <p class="cs-detail-label">Role</p>
+          <p class="cs-detail-value">UX Lead, PowerSchool</p>
+        </div>
+        <div class="cs-detail">
+          <p class="cs-detail-label">Platform</p>
+          <p class="cs-detail-value">Native mobile (iOS &amp; Android)</p>
+        </div>
+        <div class="cs-detail cs-detail--wide">
+          <p class="cs-detail-label">Focus</p>
+          <p class="cs-detail-value">Strategy, UX research, rapid prototyping, native interaction design</p>
+        </div>
+        <div class="cs-detail cs-detail--wide">
+          <p class="cs-detail-label">Team</p>
+          <p class="cs-detail-value">UX design (me), UX Researcher, Product manager, UX writer, Mobile architect, Mobile engineering lead, Mobile QA lead</p>
+        </div>
+        <div class="cs-detail cs-detail--wide">
+          <p class="cs-detail-label">Tools</p>
+          <p class="cs-detail-value">Cursor, Figma, hand sketching, Dreamflow, UX Pilot</p>
+        </div>
+      </div>
+
+      <div class="cs-summary-card">
+        <p class="cs-summary-label">Summary</p>
+        <p class="cs-summary-text">Upgraded the core experience of the mobile educator app to deliver streamlined attendance and family communication workflows, packaged in an enhanced landing experience — meeting teachers directly in their daily context to boost teacher adoption, leading to customer retention wins.</p>
+      </div>
+
+      <figure class="cs-hero-figure">
+        <img src="assets/case-study-teachers/hero-roster-swipe.png" alt="A teacher holds a phone showing the English 9 roster, mid-swipe revealing quick actions to mark a student late or absent" loading="lazy">
+        <img src="assets/case-study-teachers/hero-roster-scroll.png" alt="The same roster screen for English 9 scrolled further, showing a student marked absent and excused" loading="lazy">
+      </figure>
+
+      <button type="button" class="cs-watch-btn" id="watch-prototype-btn" aria-haspopup="dialog">
+        <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V14L14 7L0 0Z" fill="currentColor"/></svg>
+        Watch the prototype video
+      </button>
+    </section>
+
+    <div class="video-modal" id="prototype-modal" hidden>
+      <div class="video-modal-backdrop" data-modal-close></div>
+      <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-label="Prototype video">
+        <button type="button" class="video-modal-close" data-modal-close aria-label="Close video">&times;</button>
+        <video id="prototype-video" controls playsinline preload="metadata"
+               poster="images/attendance-poster.jpg"
+               aria-label="Demo: a teacher swiping through the class list to mark attendance, then submitting and confirming">
+          <source src="videos/attendance-demo.mp4" type="video/mp4">
+        </video>
+        <p class="video-modal-caption">Educator Enhancements prototype — Flutter code application on iPhone 16 simulator</p>
+      </div>
+    </div>
+
+    <section class="cs-section" id="problem">
+      <h2 class="cs-h2">The problem and hypothesis</h2>
+      <div class="cs-split">
+        <div class="cs-split-col">
+          <p class="cs-kicker">Problem</p>
+          <p class="cs-serif-lg">Despite a feature-rich MVP offering, teachers lacked a high-value mobile offering which understood their context and met the needs of key workflows, leading to low adoption, threatening customer retention.</p>
+        </div>
+        <div class="cs-split-col cs-split-col--accent">
+          <p class="cs-kicker">Hypothesis</p>
+          <p class="cs-serif-lg">A workhorse roster with fast, mobile-friendly attendance and streamlined family communication will reduce teacher workload and increase customer retention.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" id="outcome">
+      <h2 class="cs-h2">The outcome</h2>
+      <div class="cs-split">
+        <div class="cs-split-col">
+          <p class="cs-kicker">Business</p>
+          <p class="cs-stat"><span class="cs-stat-num">~130</span><span class="cs-stat-unit">%</span></p>
+          <p class="cs-stat-label">Projected retention lift</p>
+        </div>
+        <div class="cs-split-col cs-split-col--accent">
+          <p class="cs-kicker">User value</p>
+          <p class="cs-serif-lg">An intuitive, key-task-oriented mobile experience built for fast-paced teaching scenarios.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" id="working">
+      <h2 class="cs-h2">Experience leadership</h2>
+      <p class="cs-para">I set the direction for the project, starting with stakeholder mapping, and setting project goals and metrics alongside product. I led our team through user needs-based requirement definition, followed by multiple design iterations and feedback rounds, wrapping up with usability testing. I pushed outside of my comfort zone by prototyping &mdash; experimenting with native code &ldquo;vibe-coding&rdquo; and partnering with engineering to set up a prototype in TestFlight.</p>
+
+      <dl class="cs-points">
+        <div class="cs-point">
+          <dt>AI &amp; prototyping</dt>
+          <dd>Championed &ldquo;vibe coding&rdquo; and rapid mobile prototyping to explore native gesture workflows early.</dd>
+        </div>
+        <div class="cs-point">
+          <dt>Native mobile focus</dt>
+          <dd>Pioneered native mobile designs and hands-on testing to ensure intuitive touch controls.</dd>
+        </div>
+        <div class="cs-point">
+          <dt>UX research leadership</dt>
+          <dd>Defined and led the research scope and strategy to evaluate critical educator workflows.</dd>
+        </div>
+        <div class="cs-point cs-point--last">
+          <dt>End-to-end execution</dt>
+          <dd>Guided the design from concept through validation, keeping adoption and retention metrics as the north star.</dd>
+        </div>
+      </dl>
+
+      <blockquote class="cs-quote">
+        <p>&ldquo;You&rsquo;ve knocked it out of the park. I also love that you took initiative to build a TestFlight prototype so that we can literally get our hands on the design. Next level stuff! Seeing this makes me even more eager to go back and start rebuilding some of the Parent/Student app natively with Flutter.&rdquo;</p>
+        <cite>— Sam Spencer, Group VP of Engineering</cite>
+      </blockquote>
+    </section>
+
+    <section class="cs-section" id="decisions">
+      <h2 class="cs-h2">Strategic decisions</h2>
+      <dl class="cs-points">
+        <div class="cs-point">
+          <dt>Strategic positioning</dt>
+          <dd>Analyzed competitive market data to position the app as an essential daily tool supporting key tasks, surfacing mission-critical data, and supporting communications, rather than a secondary system.</dd>
+        </div>
+        <div class="cs-point cs-point--last">
+          <dt>Lean research strategy</dt>
+          <dd>Re-analyzed existing research to save cost, then launched targeted new studies only where design validation and usability testing were critical.</dd>
+        </div>
+      </dl>
+
+      <figure class="cs-figure">
+        <div class="cs-figure-pair">
+          <figure class="cs-figure"><div class="cs-figure-frame"><img src="assets/case-study-teachers/discovery-goals-workshop.png" alt="A workshop slide titled Scope and Goals, with sticky notes capturing business goals and success metrics" loading="lazy" style="width:100%; height:auto; display:block;"></div></figure>
+          <figure class="cs-figure"><div class="cs-figure-frame"><img src="assets/case-study-teachers/discovery-survey-chart.png" alt="Bar chart of average importance rank from a teacher survey, with Attendance ranked the highest priority" loading="lazy" style="width:100%; height:auto; display:block;"></div></figure>
+          <figure class="cs-figure"><div class="cs-figure-frame"><img src="assets/case-study-teachers/discovery-workflow-diagram.png" alt="A workflow diagram mapping the office and teacher attendance process, with sticky notes flagging open questions" loading="lazy" style="width:100%; height:auto; display:block;"></div></figure>
+        </div>
+        <figcaption>Above: early discovery artifacts — sample survey results, goal and metric alignment from the kickoff workshop, and workflow analysis to identify known gaps for research.</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-section" id="realities">
+      <h2 class="cs-h2">Key insights &mdash; what we learned about teachers&rsquo; realities</h2>
+      <p class="cs-para cs-para--muted">We began our moderated walkthrough activity with a select set of interview questions to fill in some of the knowledge gaps left over from the initial research repository analysis. Here are some of the key learnings we gained from these conversations and the walkthrough feedback:</p>
+
+      <figure class="cs-figure">
+        <div class="cs-figure-frame cs-figure-frame--duo">
+          <img src="assets/case-study-teachers/ethno-pe-teacher-1.png" alt="Video-call screenshot of a PE teacher's gym attendance station, with a standing desk and exercise equipment" loading="lazy">
+          <img src="assets/case-study-teachers/ethno-pe-teacher-2.png" alt="Video-call screenshot of the same PE teacher, selfie-style, showing the gym attendance station from a different angle" loading="lazy">
+        </div>
+        <figcaption>Above: a physical ed teacher walking us through his teaching environment, explaining where he has to travel to take attendance.</figcaption>
+      </figure>
+
+      <blockquote class="cs-quote">
+        <p>&ldquo;I take attendance at the beginning in the class, and I have to submit it right away. Well, then Joe comes in, and Kelly comes in, and Jennifer comes in, and Scott comes in, and every time they come in, I got to run over [to my desk] and fix the attendance. So, if I had a mobile device&hellip;&rdquo;</p>
+        <cite>— Phys ed teacher</cite>
+        <button type="button" class="cs-watch-btn" style="display: flex; margin-bottom: 12px;" aria-label="Listen to a teacher talk to us about attendance">
+          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V14L14 7L0 0Z" fill="currentColor"/></svg>
+          Listen to a teacher talk to us about attendance
+        </button>
+      </blockquote>
+
+      <div class="cs-findings">
+        <div class="cs-finding">
+          <p class="cs-finding-num">01</p>
+          <div class="cs-finding-body">
+            <h3>There&rsquo;s no single way to take attendance</h3>
+            <p>A common behavior with the teacher persona is the personalized approach they take to many tasks in their day. Taking attendance is no different. It happens mid-lesson, at the door, on paper, on laptops, on systems on the classroom wall &mdash; and can be conducted with an <strong>additive or subtractive mental model</strong>. For gym teachers and on field trips, it&rsquo;s not happening in the classroom at all.</p>
+          </div>
+        </div>
+        <div class="cs-finding">
+          <p class="cs-finding-num">02</p>
+          <div class="cs-finding-body">
+            <h3>Teachers need to be able to submit&hellip; and re-submit at any point in the day</h3>
+            <p>Attendance is due to be officially submitted (for safety and reporting reasons) at specific, building or district mandated times, but <strong>must be editable by the teacher</strong> — and in reality, they might not get to editing it in the system until the end of the day. A mobile option helps the odds that they will edit it sooner, but it&rsquo;s still a common use case that needs to be accounted for.</p>
+          </div>
+        </div>
+        <div class="cs-finding">
+          <p class="cs-finding-num">03</p>
+          <div class="cs-finding-body">
+            <h3>Taking attendance on a mobile device solves a major privacy concern</h3>
+            <p>By taking attendance on a separate device, teachers can stop worrying about sharing sensitive data over their screen projections. They can <strong>keep the material they project up uninterrupted</strong> and perform a separate, discreet task using a mobile device.</p>
+          </div>
+        </div>
+        <div class="cs-finding">
+          <p class="cs-finding-num">04</p>
+          <div class="cs-finding-body">
+            <h3>Contacting families by mobile device is a game changer, with strings attached</h3>
+            <p>The ability to contact families with a couple taps on a mobile device was well received by teachers, but they needed more details about the relationship of guardians than our data set currently allowed, and they had <strong>major reservations about using unmarked personal phone numbers</strong> to communicate.</p>
+          </div>
+        </div>
+      </div>
+
+      <figure class="cs-figure">
+        <div class="cs-figure-frame"><img src="assets/case-study-teachers/ethno-walkthrough-call.png" alt="Video-call screenshot of a cognitive walkthrough, showing a teacher gesturing while the app's home screen with an attendance reminder is shared on screen" loading="lazy" style="width:100%; height:auto; display:block;"></div>
+        <figcaption>Above: a cognitive walkthrough with a teacher for scope.</figcaption>
+      </figure>
+
+      <h2 class="cs-h2 cs-h2--tight">Design details that delighted teachers</h2>
+
+      <dl class="cs-points">
+        <div class="cs-point">
+          <dt>Automated in-app reminders</dt>
+          <dd>Automated reminders delighted teachers using the app.</dd>
+        </div>
+        <div class="cs-point">
+          <dt>Single tap communications</dt>
+          <dd>Participants in usability tests could single-digit tap to contact a guardian.</dd>
+        </div>
+        <div class="cs-point">
+          <dt>Gesture-based interactions</dt>
+          <dd>Prioritized fast, gesture-driven interactions to minimize taps while a teacher is mid-instruction. Single tap (and assistive tech support) was also included to support all teachers.</dd>
+        </div>
+        <div class="cs-point">
+          <dt>Push notifications</dt>
+          <dd>To remind teachers outside of the app.</dd>
+        </div>
+        <div class="cs-point">
+          <dt>Contextual indicators</dt>
+          <dd>Labels and badges — like birthdays, language support, and other sensitive student flags — give teachers critical context in the moment.</dd>
+        </div>
+        <div class="cs-point cs-point--last">
+          <dt>Micro-notes</dt>
+          <dd>Quick comment boxes (e.g. &ldquo;Missed bus&rdquo;) added vital context to attendance records.</dd>
+        </div>
+      </dl>
+
+      <blockquote class="cs-quote">
+        <p>&ldquo;I like the swipe because most of the time you&rsquo;re one handed and you might have your hands with your drinks and your coffee. So it was nicest to go left and right rather than having to tap.&rdquo;</p>
+        <cite>— Educator feedback</cite>
+      </blockquote>
+
+      <figure class="cs-figure">
+        <div class="cs-figure-frame cs-figure-frame--duo">
+          <img src="assets/case-study-teachers/testing-prototype-1.png" alt="Video-call screenshot of a usability test participant tapping through the TestFlight prototype on their phone" loading="lazy">
+          <img src="assets/case-study-teachers/testing-prototype-2.png" alt="Video-call screenshot of a second usability test participant holding up their phone with the prototype open" loading="lazy">
+        </div>
+        <figcaption>Above: a teacher testing key workflow tasks from the Flutter code prototype in TestFlight.</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-section" id="reflections">
+      <h2 class="cs-h2">Reflections and what&rsquo;s next</h2>
+
+      <h3 class="cs-h3">What I&rsquo;d do differently next time</h3>
+      <p class="cs-para">Establish a structured beta period with active educators early on, to collect real-world usage feedback before launch.</p>
+      <p class="cs-para">Ensure that business metrics aligned with product managers directly tie to key OKRs for the business unit.</p>
+
+      <div class="cs-next-steps">
+        <p class="cs-kicker">Next steps</p>
+        <p>Explore user and customer appetite for AI-assisted, multi-modal inputs — like audio notes and photo capture — to make attendance logging even faster. Explore ethical, technical (i.e. AI accuracy and reliability), and legal considerations for these ideas.</p>
+        <p>Connect rosters up with additional data streams and tools to bring additional actionable data to teachers&rsquo; fingertips, such as parent-excused absences for doctor appointments.</p>
+      </div>
+    </section>
+
+    <div class="cs-back">
+      <span class="cs-back-link">&copy; Lise McMillan &mdash;</span>
+      <a href="index.html" class="cs-back-link">&larr; Back to all projects</a>
+    </div>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-tagline">Lise McMillan<br>Experience designer &amp; <br>Humanity-centered design leader</p>
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#how-i-work">How I Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#resume">Resume</a>
+      </div>
+      <div class="footer-col">
+        <h4>Let&rsquo;s Chat</h4>
+        <a href="index.html#linkedin">LinkedIn</a>
+        <a href="index.html#email">Email</a>
+      </div>
+      <div class="footer-col">
+        <h4>Socials</h4>
+        <a href="index.html#x">X</a>
+        <a href="index.html#arena">Aren.a</a>
+        <a href="index.html#youtube">YouTube</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var links = document.querySelectorAll('.cs-toc-link');
+  var sections = Array.prototype.map.call(links, function (link) {
+    return document.querySelector(link.getAttribute('href'));
+  });
+
+  function setActive() {
+    var pos = window.scrollY + 140;
+    var activeIndex = 0;
+    sections.forEach(function (section, i) {
+      if (section && section.offsetTop <= pos) activeIndex = i;
+    });
+    links.forEach(function (link, i) {
+      link.classList.toggle('active', i === activeIndex);
+    });
+  }
+
+  window.addEventListener('scroll', setActive, { passive: true });
+  setActive();
+})();
+
+(function () {
+  var openBtn = document.getElementById('watch-prototype-btn');
+  var modal = document.getElementById('prototype-modal');
+  if (!openBtn || !modal) return;
+  var video = document.getElementById('prototype-video');
+  var closers = modal.querySelectorAll('[data-modal-close]');
+
+  function openModal() {
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    if (video) video.play();
+    modal.querySelector('.video-modal-close').focus();
+  }
+
+  function closeModal() {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+    if (video) { video.pause(); video.currentTime = 0; }
+    openBtn.focus();
+  }
+
+  openBtn.addEventListener('click', openModal);
+  closers.forEach(function (el) { el.addEventListener('click', closeModal); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !modal.hidden) closeModal();
+  });
+})();
+</script>
+
+</body></html>

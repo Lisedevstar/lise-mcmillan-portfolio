@@ -1,0 +1,4 @@
+serve.py
+*.bak
+.DS_Store
+.claude/
